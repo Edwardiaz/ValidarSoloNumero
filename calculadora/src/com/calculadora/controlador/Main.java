@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args)  {
 
 		CalculadoraDigital cd = new CalculadoraDigital();
-
+		
 		Scanner sc = new Scanner(System.in);
 		boolean validar = true;
 		double x = 0, y = 0;
@@ -15,18 +15,21 @@ public class Main {
 
 		do {
 			try {
-
 				x = Double.parseDouble(sc.nextLine());
 				y = Double.parseDouble(sc.nextLine());
-
-				System.out.println("Suma: ");
-				System.out.println(cd.sumar(x, y));
-				System.out.println("Resta: ");
-				System.out.println(cd.restar(x, y));
-				System.out.println("Multiplicación: ");
-				System.out.println(cd.multiplicar(x, y));
-				System.out.println("Division: ");
+				CalculadoraDigital cd2 = new CalculadoraDigital(x,y);
+				System.out.println("Suma: " + cd2.sumar2());
+				
 				System.out.println(cd.division(x, y));
+				
+//				System.out.println("Suma: ");
+//				System.out.println(cd.sumar(x, y));
+//				System.out.println("Resta: ");
+//				System.out.println(cd.restar(x, y));
+//				System.out.println("Multiplicación: ");
+//				System.out.println(cd.multiplicar(x, y));
+//				System.out.println("Division: ");
+//				System.out.println(cd.division(x, y));
 				validar = false;
 
 			} catch (Exception e) {

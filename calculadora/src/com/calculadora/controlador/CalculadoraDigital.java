@@ -7,6 +7,11 @@ public class CalculadoraDigital extends Calculadora {
 	public CalculadoraDigital() {
 		
 	}
+	
+public CalculadoraDigital(double a, double b) {
+		super(a, b);
+	}
+	
 	/* static double r;
 	
 	@Override
